@@ -1,14 +1,11 @@
-#include<stdio.h>
-main()
-{
-	int a,b,*c,*d;
-	printf("enter a number \n");
-	
-	scanf("%d",&a);
-	
-printf("%d\n",a);
-c=&a;
-printf("%d",c);
-	
-	
+main( ) {
+int a = 10, b = 20 ;
+swapr ( &a, &b ) ;
+printf ( "\na = %d b = %d", a, b ) ;
+}
+swapr( int *x, int *y ) {
+int t ;
+t = *x ;
+*x = *y ;
+*y = t ;
 }
